@@ -203,7 +203,7 @@ So, if you have followed until now, you have created the configuration to access
 
 If you're on some linux probably the config has been created in 
 `.config/rclone/rclone.conf`
-If you're on WSL it should be here
+If you're on WSL it should be here:
 `C:\Users\USERNAME\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\USERNAME\.config\rclone\rclone.conf`
 Copy the file content (or copy it from the terminal windows you have used for rclone config, omitting the dashes).
 
