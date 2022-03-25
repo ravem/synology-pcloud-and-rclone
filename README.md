@@ -42,14 +42,15 @@ The following text will help you through the interactive setup process but befor
 Let's go.
 
 In your terminal/bash/wsl launch:
-```console
+
+```
 rclone config
 
 No remotes found, make a new one?
 n) New remote
 s) Set configuration password
 q) Quit config
-n/s/q> n
+n/s/q> n 
 name> pcloud
 Option Storage.
 Type of storage to configure.
@@ -162,8 +163,8 @@ y) Yes
 n) No (default)
 y/n> n
 Use auto config?
- * Say Y if not sure
- * Say N if you are working on a remote or headless machine
+ \* Say Y if not sure
+ \* Say N if you are working on a remote or headless machine
 y) Yes (default)
 n) No
 y/n> y
