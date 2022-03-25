@@ -207,7 +207,7 @@ If you're on WSL it should be here
 `C:\Users\USERNAME\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\USERNAME\.config\rclone\rclone.conf`
 Copy the file content (or copy it from the terminal windows you have used for rclone config, omitting the dashes).
 
-Go back to the root SSH connection to the NAS you have used to install rclone, here you must edit the NAS configuration file. 
+Go back to the SSH connection to the NAS you have used to install rclone, here you must edit the NAS configuration file. 
 The editor installed in the terminal is VI *_tense creepy background music_*...
 VI it's a powerful editor, but it's like cilantro, love it or hate it.
 Since it's what we have, let's try to survive.
@@ -223,7 +223,7 @@ Now you can enter text, so paste the config you have in your clipboard (right cl
 
 Exit the Insert mode pressing `Esc`.
 
-Now, if everything has been done correctly and the Almighty is on your side, you must save the file.
+Now, if everything has been done correctly and the Almighty is on your side, you must save the file and copy it in location you like, eg `/var` (but not in the deestination folder or it will be overwritten).
 You can do it entering  `:wq`.
 If something doesn't look good `:q!`will close VI without saving.
 
@@ -263,12 +263,12 @@ ls /
 and check the volume name.
 Let's say it's `/volume1/share/DATA`, to sync you you shall launch:
 ```console
-rclone sync pcloud:DATA/ /volume1/share/DATA 
+rclone --config="/var/rclone.conf" sync pcloud:DATA/ /volume1/share/DATA 
 ```
 Second case:
 You want to sync ALL pcloud content IN your storage: the command is:
 ```console
-rclone sync pcloud:/ /volume1/share/CloudSync/pcloud/
+rclone sync --config="/var/rclone.conf" pcloud:/ /volume1/share/CloudSync/pcloud/
 ```
 If you want to sync the folders you have the command rclone sync, again look here https://rclone.org/commands/ for the documentation.
 
