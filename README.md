@@ -224,6 +224,7 @@ Now you can enter text, so paste the config you have in your clipboard (right cl
 Exit the Insert mode pressing `Esc`.
 
 Now, if everything has been done correctly and the Almighty is on your side, you must save the file and copy it in location you like, eg `/var` (but not in the deestination folder or it will be overwritten).
+
 You can do it entering  `:wq`.
 If something doesn't look good `:q!`will close VI without saving.
 
