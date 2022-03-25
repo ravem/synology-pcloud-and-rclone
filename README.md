@@ -261,8 +261,8 @@ Take a look under Storage manager or give a simple:
 ```console
 ls / 
 ```
-and check the volume name, let's say it's `/volume1/share/DATA`
-Then launch:
+and check the volume name.
+Let's say it's `/volume1/share/DATA`, to sync you you shall launch:
 ```console
 rclone sync pcloud:DATA/ /volume1/share/DATA 
 ```
