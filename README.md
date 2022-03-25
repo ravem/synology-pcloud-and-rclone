@@ -23,9 +23,11 @@ Finally, you must install Rclone:
 ./install.sh
 ```
 You won't be able to install man pages, and you'll probably get an error about it, but don't care, it works fine anyway. 
+
 Do not close ther connection.
 
 The initial setup involves getting a token from pCloud. 
+
 Since you're on a terminal and you don't have access to a browser this can be done in two separate steps.
 
 On a pc open a WSL terminal, (assuming ubuntu) or you favourite linux shell and install rclone if not available:
@@ -35,6 +37,7 @@ curl https://rclone.org/install.sh | sudo bash
 Do not install with package manager, the version in the repository can be old.
 
 Now that we have all the pieces we must start putting everything together an it's time to create a remote, that is the configuration to access the remote storage.
+
 For us the remote storage will be pcloud, and we will name the remote pcloud, boring, I know, sometimes my wife thinks the same..
 
 The following text will help you through the interactive setup process but before you start, open a broser and log in pcloud, it will be useful when, at the end of the configuration you will need to authorize the access (you will be asked to open a link like this http://127.0.0.1:53682/auth?state=A_LONG_AUTHORIZATION_STRING ).
@@ -202,12 +205,15 @@ e/n/d/r/c/s/q> q
 So, if you have followed until now, you have created the configuration to access pcloud from your computer, that is, the part between the two `-------------------` up there,  and you just need to move it in the Synology NAS.
 
 If you're on some linux probably the config has been created in 
-`.config/rclone/rclone.conf`
+`.config/rclone/rclone.conf`.
+
 If you're on WSL it should be here:
-`C:\Users\USERNAME\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\USERNAME\.config\rclone\rclone.conf`
+`C:\Users\USERNAME\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\USERNAME\.config\rclone\rclone.conf`.
+
 Copy the file content (or copy it from the terminal windows you have used for rclone config, omitting the dashes).
 
 Go back to the SSH connection to the NAS you have used to install rclone, here you must edit the NAS configuration file. 
+
 The editor installed in the terminal is VI *_tense creepy background music_*...
 VI it's a powerful editor, but it's like cilantro, love it or hate it.
 Since it's what we have, let's try to survive.
