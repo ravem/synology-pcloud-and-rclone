@@ -228,7 +228,9 @@ Now, if everything has been done correctly and the Almighty is on your side, you
 You can do it entering  `:wq`.
 If something doesn't look good `:q!`will close VI without saving.
 
-Cool. rclone is configured, now try the following command.
+Cool. 
+
+Rclone is configured, now try the following command.
 ```console
 rclone lsd pcloud:
 ```
