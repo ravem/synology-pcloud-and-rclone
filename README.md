@@ -283,6 +283,6 @@ Then, in the create task window, enter your task name in the general settings ta
 Next, in the schedule tab, choose the schedule.
 Finally, on the task setting tab, paste your user-defined script.
 
-Click Ok.
+Click `Ok`.
 
 Done.
