@@ -37,7 +37,7 @@ Do not install with package manager, the version in the repository can be old.
 Now that we have all the pieces we must start putting everything together an it's time to create a remote, that is the configuration to access the remote storage.
 For us the remote storage will be pcloud, and we will name the remote pcloud, boring, I know, sometimes my wife thinks the same..
 
-The following text will help you through the interactive setup process but before you start, open a broser and log in pcloud, it will be useful when, at the end of the configuration you will need to authorize the access (you will be asked to open a link like this http://127.0.0.1:53682/auth?state=A_LONG_AUTHORIZATION_STRING).
+The following text will help you through the interactive setup process but before you start, open a broser and log in pcloud, it will be useful when, at the end of the configuration you will need to authorize the access (you will be asked to open a link like this http://127.0.0.1:53682/auth?state=A_LONG_AUTHORIZATION_STRING ).
 
 Let's go.
 
@@ -238,7 +238,7 @@ rclone ls pcloud:
 ```
 This will list all the files you have in pcloud.
 
-If this works che configuration is done explore more commands here: (https://rclone.org/commands/)
+If this works che configuration is done explore more commands here: https://rclone.org/commands/
 
 Now you may want to setup you backup/sync/copy from/to pcloud, I will give only two quick examples, since there is plenty of documentation on this.
 Let's say you want to mirror some or all your cloud data in your NAS: your command is `rclone sync`, let's learn someting more about it.
