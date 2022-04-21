@@ -1,4 +1,4 @@
-# How to install rclone on a Synology NAS and use it with pcloud (tested on DS2016j, on DSM 7 and 2FA enabled).
+# How to install rclone on a Synology NAS and use it with pcloud (tested on DS2016j, on DSM 7.x and 2FA enabled).
 ## work in progress, use at own risk
 
 First of all you must enable SSH access on your Synology NAS:
