@@ -25,7 +25,7 @@ Finally, you must install Rclone:
 ```
 You won't be able to install man pages, and you'll probably get an error about it, but don't care, it works fine anyway. 
 
-Do not close ther connection.
+Do not close the connection.
 
 The initial setup involves getting a token from pCloud. 
 
