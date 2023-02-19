@@ -233,7 +233,7 @@ Now you can enter text, so paste the config you have in your clipboard (right cl
 
 Exit the Insert mode pressing `Esc`.
 
-Now, if everything has been done correctly and the Almighty is on your side, you must save the file and copy it in location you like, eg `/share/Myconfigs` (but not in the deestination folder or it will be overwritten).
+Now, if everything has been done correctly, you must save the file and copy it in location you like, eg `/share/Myconfigs` (but not in the destination folder or it will be overwritten).
 
 This is important, if you update your system, you'll need to install again rclone, so having the config in a location that will be not overwritten will avoid all the configuration hassle.
 
