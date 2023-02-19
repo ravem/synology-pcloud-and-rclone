@@ -152,6 +152,7 @@ Choose a number from below, or type in your own value.
 46 / seafile
    \ (seafile)
 Storage> 31
+
 Option client_id.
 OAuth Client Id.
 Leave blank normally.
@@ -162,6 +163,7 @@ OAuth Client Secret.
 Leave blank normally.
 Enter a value. Press Enter to leave empty.
 client_secret>
+
 Edit advanced config?
 y) Yes
 n) No (default)
@@ -172,6 +174,7 @@ Use auto config?
 y) Yes (default)
 n) No
 y/n> y
+
 2022/03/25 16:14:46 NOTICE: If your browser doesn't open automatically go to the following link: http://127.0.0.1:53682/auth?state=A_LONG_AUTHORIZATION_STRING
 2022/03/25 16:14:46 NOTICE: Log in and authorize rclone for access
 2022/03/25 16:14:46 NOTICE: Waiting for code...
