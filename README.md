@@ -283,7 +283,7 @@ rclone --config="/var/rclone.conf" sync /volume1/share/DATA pcloud:DATA/
 Second case:
 You want to sync ALL pcloud content IN your storage: the command is:
 ```console
-rclone sync --config="/var/rclone.conf" /volume1/share/CloudSync/pcloud/ pcloud:/ 
+rclone sync --config="/var/rclone.conf" pcloud:/ /volume1/share/CloudSync/pcloud/  
 ```
 If you want to sync the folders you have the command rclone sync, again look here https://rclone.org/commands/ for the documentation.
 
