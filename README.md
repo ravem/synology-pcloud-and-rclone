@@ -279,7 +279,7 @@ and check the volume name.
 Let's say it's `/volume1/share/DATA`, to sync you you shall launch:
 ```console
 rclone --config="/var/rclone.conf" sync /volume1/share/DATA pcloud:DATA/  
-```0
+```
 Second case:
 You want to sync ALL pcloud content IN your storage: the command is:
 ```console
