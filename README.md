@@ -278,12 +278,12 @@ ls /
 and check the volume name.
 Let's say it's `/volume1/share/DATA`, to sync you you shall launch:
 ```console
-rclone --config="/var/rclone.conf" sync pcloud:DATA/ /volume1/share/DATA 
-```
+rclone --config="/var/rclone.conf" sync /volume1/share/DATA pcloud:DATA/  
+```0
 Second case:
 You want to sync ALL pcloud content IN your storage: the command is:
 ```console
-rclone sync --config="/var/rclone.conf" pcloud:/ /volume1/share/CloudSync/pcloud/
+rclone sync --config="/var/rclone.conf" /volume1/share/CloudSync/pcloud/ pcloud:/ 
 ```
 If you want to sync the folders you have the command rclone sync, again look here https://rclone.org/commands/ for the documentation.
 
