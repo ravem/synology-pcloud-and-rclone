@@ -265,9 +265,9 @@ Sync the source to the destination, changing the destination only. Doesn't trans
 Important: Since this can cause data loss, test first with the --dry-run or the --interactive/-i flag.
 
 rclone sync -i SOURCE remote:DESTINATION
-Note that files in the destination won't be deleted if there were any errors at any point. Duplicate objects (files with the same name, on those providers that support it) are also not yet handled.`
+Note that files in the destination won't be deleted if there are any errors at any point. Duplicate objects (files with the same name, on those providers that support it) are also not yet handled.`
 
-First case:
+Example:
 you want to mirror ALL the content of the folder DATA that's in your pcloud storage IN your NAS.
 
 Find in your NAS the location of the destination folder, it should be in /PATH/TO/NAME_OF_YOUR_VOLUME.
@@ -276,16 +276,12 @@ Take a look under Storage manager or give a simple:
 ls / 
 ```
 and check the volume name.
-Let's say it's `/volume1/share/DATA`, to sync you you shall launch:
+Let's say it's `/volume1/share/DATA`, to sync you shall launch:
 ```console
 rclone --config="/var/rclone.conf" sync pcloud:DATA/ /volume1/share/DATA
 ```
-Second case:
-You want to sync ALL pcloud content IN your storage: the command is:
-```console
-rclone sync --config="/var/rclone.conf" pcloud:/ /volume1/share/CloudSync/pcloud/  
-```
-If you want to sync the folders you have the command rclone sync, again look here https://rclone.org/commands/ for the documentation.
+
+To explore more about rclone sync, look here https://rclone.org/commands/ for the documentation.
 
 Ok last step, set up a scheduled job.
 Log in to the Synology NAS.
